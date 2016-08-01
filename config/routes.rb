@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root "welcome#index"
+  
+  resources :userpokes
   devise_for :users
   resources :pokemons
 

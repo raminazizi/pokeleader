@@ -3,4 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  has_many :userpokes, dependent: :destroy
+  has_many :pokemons , through: :userpokes
 end

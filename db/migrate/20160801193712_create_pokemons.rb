@@ -4,7 +4,7 @@ class CreatePokemons < ActiveRecord::Migration
       t.string :name
       t.string :picture
       t.string :moves
-      t.string :type
+      t.string :kind
       t.float :weight
       t.float :height
 
